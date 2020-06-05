@@ -2,9 +2,9 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" >
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.juxue.commonWeb</groupId>
-  <artifactId>commonWeb</artifactId>
-  <name>commonWeb</name>
+  <groupId>com.juxue.common</groupId>
+  <artifactId>common</artifactId>
+  <name>common</name>
   <packaging>war</packaging>
   	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -129,7 +129,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>commonWeb</finalName>
+		<finalName>common</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

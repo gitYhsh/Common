@@ -1,0 +1,941 @@
+2020-05-30 15:10:11.583 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 10768 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 15:10:11.648 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 15:10:15.359 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$af4fde36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 15:10:16.738 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 15:10:16.941 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 15:10:16.984 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 15:10:16.985 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 15:10:17.008 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 15:10:17.317 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 15:10:17.318 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 5115 ms
+2020-05-30 15:10:18.225 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 15:10:18.225 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 15:10:18.227 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 15:10:18.621 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 15:10:18.842 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 15:10:18.900 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 15:10:18.960 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 15:10:19.165 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 15:10:19.265 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 15:10:19.279 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 9.334 seconds (JVM running for 14.519)
+2020-05-30 16:11:51.195 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13792 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:11:51.196 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:11:52.209 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:11:52.321 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 101ms. Found 1 repository interfaces.
+2020-05-30 16:11:52.602 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$1773d385] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:11:53.032 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:11:53.044 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:11:53.051 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:11:53.052 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:11:53.058 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:11:53.170 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:11:53.170 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1934 ms
+2020-05-30 16:11:53.706 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:11:53.708 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:11:53.709 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:11:53.709 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:11:53.710 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:11:53.710 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:11:55.397 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:12:17.845 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{4DH8rhlSS66oRzibnulrIw}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:12:18.471 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:12:18.472 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:12:18.473 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:12:18.581 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:12:22.028 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:12:22.045 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:12:22.078 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:12:22.203 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:12:22.258 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:12:22.260 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 31.51 seconds (JVM running for 34.063)
+2020-05-30 16:13:16.644 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13168 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:13:16.646 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:13:17.741 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:13:17.795 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2020-05-30 16:13:17.988 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$48fbab17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:13:18.386 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:13:18.399 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:13:18.406 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:13:18.407 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:13:18.412 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:13:18.527 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:13:18.528 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1819 ms
+2020-05-30 16:13:18.827 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:13:18.828 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:13:18.828 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:13:18.828 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:13:18.828 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:13:18.829 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:13:19.770 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:13:20.307 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{AvNt7JCESPWl1taVWkGABQ}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:13:20.620 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:13:20.621 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:13:20.622 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:13:20.708 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:13:21.329 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:13:21.345 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:13:21.376 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:13:21.503 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:13:21.554 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:13:21.558 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 5.738 seconds (JVM running for 7.458)
+2020-05-30 16:14:07.079 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 16:14:07.079 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2020-05-30 16:14:07.102 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 23 ms
+2020-05-30 16:14:07.231 [http-nio-8088-exec-1] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{AvNt7JCESPWl1taVWkGABQ}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{AvNt7JCESPWl1taVWkGABQ}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:28) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:14:42.780 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13320 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:14:42.782 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:14:44.351 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:14:44.428 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2020-05-30 16:14:44.691 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$1c24e50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:14:45.484 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:14:45.503 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:14:45.511 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:14:45.512 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:14:45.519 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:14:45.625 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:14:45.625 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 2783 ms
+2020-05-30 16:14:45.887 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:14:45.888 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:14:45.888 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:14:45.888 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:14:45.889 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:14:45.889 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:14:46.721 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:14:47.275 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:14:47.589 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:14:47.590 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:14:47.591 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:14:47.673 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:14:48.272 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:14:48.288 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:14:48.319 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:14:48.451 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:14:48.499 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:14:48.501 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 6.688 seconds (JVM running for 8.486)
+2020-05-30 16:14:54.075 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 16:14:54.076 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2020-05-30 16:14:54.082 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 6 ms
+2020-05-30 16:14:54.139 [http-nio-8088-exec-1] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:29) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:14:55.222 [http-nio-8088-exec-3] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:29) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:15:12.212 [http-nio-8088-exec-5] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{FUWz580mT86MCBkGdjsnAg}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:29) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:21:10.271 [elasticsearch[_client_][transport_client_boss][T#7]] WARN  org.elasticsearch.transport.TransportService.checkForTimeout(TransportService.java:903) - Transport response handler not found of id [91]
+2020-05-30 16:21:10.335 [elasticsearch[_client_][transport_client_boss][T#7]] ERROR org.elasticsearch.transport.netty4.Netty4Utils.maybeDie(Netty4Utils.java:183) - fatal error on the network layer
+	at org.elasticsearch.transport.netty4.Netty4Utils.maybeDie(Netty4Utils.java:182)
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.exceptionCaught(Netty4MessageChannelHandler.java:73)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285)
+	at io.netty.channel.AbstractChannelHandlerContext.notifyHandlerException(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:364)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:426)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:278)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:648)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:548)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:502)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-30 16:21:10.337 [elasticsearch[_client_][transport_client_boss][T#7]] WARN  org.elasticsearch.transport.TcpTransport.onException(TcpTransport.java:1055) - exception caught on transport layer [NettyTcpChannel{localAddress=/192.168.2.149:52006, remoteAddress=/47.92.1.148:9300}], closing connection
+org.elasticsearch.ElasticsearchException: java.lang.AssertionError: illegal transport ID from node of version: 5.6.0 got: 1196 expected: 1
+	at org.elasticsearch.transport.netty4.Netty4Transport.exceptionCaught(Netty4Transport.java:237) [transport-netty4-client-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.exceptionCaught(Netty4MessageChannelHandler.java:74) [transport-netty4-client-6.4.3.jar:6.4.3]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:285) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.notifyHandlerException(AbstractChannelHandlerContext.java:856) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:364) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323) [netty-codec-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) [netty-codec-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:426) [netty-codec-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:278) [netty-codec-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) [netty-handler-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:648) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:548) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:502) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) [netty-common-4.1.31.Final.jar:4.1.31.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: java.lang.AssertionError: illegal transport ID from node of version: 5.6.0 got: 1196 expected: 1
+	at org.elasticsearch.common.transport.TransportAddress.<init>(TransportAddress.java:86) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.common.transport.TransportAddress.<init>(TransportAddress.java:75) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.common.io.stream.StreamInput.readOptionalWriteable(StreamInput.java:760) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.ActionTransportException.<init>(ActionTransportException.java:41) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.RemoteTransportException.<init>(RemoteTransportException.java:45) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.ElasticsearchException.readException(ElasticsearchException.java:306) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.common.io.stream.StreamInput.readException(StreamInput.java:782) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.TcpTransport.handlerResponseError(TcpTransport.java:1509) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.TcpTransport.messageReceived(TcpTransport.java:1443) [elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:64) ~[transport-netty4-client-6.4.3.jar:6.4.3]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	... 24 more
+2020-05-30 16:26:35.817 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13256 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:26:35.819 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:26:36.709 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:26:36.760 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2020-05-30 16:26:36.967 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$9330ff5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:26:37.408 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:26:37.425 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:26:37.434 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:26:37.435 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:26:37.442 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:26:37.565 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:26:37.565 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1605 ms
+2020-05-30 16:26:37.873 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:26:37.873 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:26:37.874 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:26:37.874 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:26:37.874 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:26:37.874 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:26:38.747 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:26:39.291 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{hrCMXFd4QeK7mi5pnSCqvg}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:26:39.608 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:26:39.609 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:26:39.610 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:26:39.692 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:26:40.301 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:26:40.317 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:26:40.348 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:26:40.474 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:26:40.526 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:26:40.528 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 5.597 seconds (JVM running for 7.261)
+2020-05-30 16:31:40.500 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 15332 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:31:40.503 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:31:41.655 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:31:41.714 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 54ms. Found 1 repository interfaces.
+2020-05-30 16:31:41.928 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$181e051] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:31:42.325 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:31:42.343 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:31:42.351 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:31:42.352 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:31:42.361 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:31:42.494 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:31:42.494 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1912 ms
+2020-05-30 16:31:42.773 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:31:42.774 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:31:42.774 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:31:42.774 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:31:42.774 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:31:42.775 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:31:43.726 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:31:44.293 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{EqYcQeTGQVmzoeTWmWhs6Q}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:31:44.651 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:31:44.651 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:31:44.652 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:31:44.770 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:31:45.426 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:31:45.443 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:31:45.492 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:31:45.682 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:31:45.755 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:31:45.760 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 6.323 seconds (JVM running for 8.123)
+2020-05-30 16:31:59.004 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 16:31:59.004 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2020-05-30 16:31:59.012 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 7 ms
+2020-05-30 16:31:59.066 [http-nio-8088-exec-1] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{EqYcQeTGQVmzoeTWmWhs6Q}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{EqYcQeTGQVmzoeTWmWhs6Q}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:29) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:35:01.870 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13892 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:35:01.871 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:35:02.751 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:35:02.821 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 66ms. Found 1 repository interfaces.
+2020-05-30 16:35:02.999 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$64a00a0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:35:03.355 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:35:03.367 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:35:03.374 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:35:03.375 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:35:03.380 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:35:03.477 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:35:03.477 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1473 ms
+2020-05-30 16:35:03.741 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:35:03.742 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:35:03.742 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:35:03.743 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:35:03.743 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:35:03.743 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:35:04.714 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:35:05.194 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{PrKBxhWaQnqU4mIbGjz6ww}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:35:05.534 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:35:05.535 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:35:05.536 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:35:05.619 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:35:06.197 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:35:06.214 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:35:06.246 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:35:06.376 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:35:06.430 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:35:06.432 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 5.501 seconds (JVM running for 8.246)
+2020-05-30 16:35:20.565 [http-nio-8088-exec-2] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 16:35:20.565 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2020-05-30 16:35:20.573 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 8 ms
+2020-05-30 16:35:20.640 [http-nio-8088-exec-2] ERROR org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/commonWeb] threw exception [Request processing failed; nested exception is NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{PrKBxhWaQnqU4mIbGjz6ww}{47.92.1.148}{47.92.1.148:9300}]]] with root cause
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{PrKBxhWaQnqU4mIbGjz6ww}{47.92.1.148}{47.92.1.148:9300}]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:349) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:247) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:60) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:381) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:407) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:396) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:46) ~[elasticsearch-6.4.3.jar:6.4.3]
+	at org.springframework.data.elasticsearch.core.ElasticsearchTemplate.index(ElasticsearchTemplate.java:577) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.save(AbstractElasticsearchRepository.java:156) ~[spring-data-elasticsearch-3.1.4.RELEASE.jar:3.1.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.sun.proxy.$Proxy100.save(Unknown Source) ~[?:?]
+	at com.juxue.web.controller.TestController.insert(TestController.java:29) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.4.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-05-30 16:36:27.642 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 14768 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:36:27.644 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:36:28.548 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:36:28.614 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 63ms. Found 1 repository interfaces.
+2020-05-30 16:36:28.849 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$7020f525] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:36:29.324 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:36:29.337 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:36:29.347 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:36:29.348 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:36:29.356 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:36:29.484 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:36:29.484 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1779 ms
+2020-05-30 16:36:29.808 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:36:29.809 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:36:29.810 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:36:29.810 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:36:29.810 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:36:29.810 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:36:30.859 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:36:31.459 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{hB3z-kW4Tzm2Amg0_B2Qlg}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:36:31.859 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:36:31.860 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:36:31.861 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:36:31.964 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:36:32.705 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:36:32.722 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:36:32.762 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:36:32.933 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:36:33.005 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:36:33.010 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 6.352 seconds (JVM running for 8.755)
+2020-05-30 16:39:15.895 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 13260 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:39:15.896 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:39:17.150 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:39:17.203 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 50ms. Found 1 repository interfaces.
+2020-05-30 16:39:17.388 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$ac0ecf67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:39:17.763 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:39:17.774 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:39:17.781 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:39:17.782 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:39:17.788 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:39:17.885 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:39:17.885 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1848 ms
+2020-05-30 16:39:18.149 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:39:18.150 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:39:18.150 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:39:18.150 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:39:18.150 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:39:18.150 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:39:19.017 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:39:19.511 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{7aK3cXAPTPKrgbf1BwY1sw}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:39:19.824 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:39:19.824 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:39:19.825 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:39:19.929 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:39:20.500 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:39:20.515 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:39:20.545 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:39:20.667 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:39:20.714 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:39:20.716 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 5.445 seconds (JVM running for 7.007)
+2020-05-30 16:39:40.019 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 11860 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:39:40.020 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:39:40.875 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:39:40.925 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 47ms. Found 1 repository interfaces.
+2020-05-30 16:39:41.127 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$15f7b0eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:39:41.516 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:39:41.531 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:39:41.538 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:39:41.539 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:39:41.545 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:39:41.661 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:39:41.661 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1590 ms
+2020-05-30 16:39:41.914 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:39:41.915 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:39:41.915 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:39:41.915 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:39:41.915 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:39:41.916 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:39:42.745 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9200
+2020-05-30 16:40:13.209 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{RBk2GOnPSKK8pGJcbgxAPQ}{47.92.1.148}{47.92.1.148:9200}]
+2020-05-30 16:40:13.551 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:40:13.551 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:40:13.552 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:40:13.634 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:40:14.194 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:40:14.209 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:40:14.239 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:40:14.372 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:40:14.425 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:40:14.427 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 35.063 seconds (JVM running for 36.628)
+2020-05-30 16:40:38.760 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 14108 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:40:38.761 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:40:39.742 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:40:39.813 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 68ms. Found 1 repository interfaces.
+2020-05-30 16:40:40.040 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$b0e10bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:40:40.482 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:40:40.495 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:40:40.505 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:40:40.505 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:40:40.513 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:40:40.609 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:40:40.609 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1788 ms
+2020-05-30 16:40:40.841 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:40:40.842 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:40:40.842 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:40:40.843 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:40:40.843 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:40:40.843 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:40:41.758 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:40:42.209 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{Ig9_rjk4TMO_PlD17ywXfQ}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:40:42.545 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:40:42.546 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:40:42.547 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:40:42.634 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:40:43.162 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:40:43.176 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:40:43.206 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:40:43.334 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:40:43.381 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:40:43.383 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 5.378 seconds (JVM running for 7.353)
+2020-05-30 16:45:17.584 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50) - Starting Application on DESKTOP-9B1Q9MI with PID 9724 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-05-30 16:45:17.587 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675) - No active profile set, falling back to default profiles: default
+2020-05-30 16:45:18.638 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-30 16:45:18.696 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:182) - Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+2020-05-30 16:45:18.909 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$347f46d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-30 16:45:19.343 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90) - Tomcat initialized with port(s): 8088 (http)
+2020-05-30 16:45:19.361 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:45:19.369 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-05-30 16:45:19.369 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-05-30 16:45:19.376 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\amp\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;D:amp\apache-maven\bin;C:\Program Files\TortoiseSVN\bin;D:\amp\jdk11\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\erl10.3\\bin;E:\goWork\bin;C:\Program Files\Git\cmd;C:\Users\wx18\AppData\Local\Microsoft\WindowsApps;C:\Users\wx18\AppData\Local\atom\bin;;.]
+2020-05-30 16:45:19.483 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-05-30 16:45:19.483 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1792 ms
+2020-05-30 16:45:19.759 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:190) - no modules loaded
+2020-05-30 16:45:19.760 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-30 16:45:19.760 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-30 16:45:19.761 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-30 16:45:19.761 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-30 16:45:19.761 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:193) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-30 16:45:20.880 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-05-30 16:45:21.479 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:91) - failed to load elasticsearch nodes : org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes are available: [{#transport#-1}{oZ29d18oR-qjBZft9gR8dw}{47.92.1.148}{47.92.1.148:9300}]
+2020-05-30 16:45:21.900 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-05-30 16:45:21.901 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2020-05-30 16:45:21.902 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'getAsyncExecutor'
+2020-05-30 16:45:22.023 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-30 16:45:22.651 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-05-30 16:45:22.668 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-05-30 16:45:22.702 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-05-30 16:45:22.844 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-05-30 16:45:22.894 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-05-30 16:45:22.896 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59) - Started Application in 6.06 seconds (JVM running for 8.212)

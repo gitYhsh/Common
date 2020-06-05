@@ -1,0 +1,883 @@
+2020-06-05 09:15:33.504 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 2892 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 09:15:33.512 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 09:15:39.482 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:15:39.647 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 159ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 09:15:39.670 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:15:39.679 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 09:15:40.094 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$34d53674] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 09:15:40.913 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 09:15:40.931 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:15:40.932 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 09:15:40.932 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 09:15:41.209 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 09:15:41.209 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 7423 ms
+2020-06-05 09:15:41.348 [main] WARN  org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-06-05 09:15:41.360 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-06-05 09:15:41.394 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 09:15:41.612 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field elasticsearchTemplate in com.juxue.web.controller.TestController required a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'elasticsearchTemplate' in 'ElasticsearchDataConfiguration.TransportClientConfiguration' not loaded because @ConditionalOnBean (types: org.elasticsearch.client.Client; SearchStrategy: all) did not find any beans of type org.elasticsearch.client.Client
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' in your configuration.
+
+2020-06-05 09:16:12.508 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 4480 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 09:16:12.513 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 09:16:13.250 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:16:13.299 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 46ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 09:16:13.303 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:16:13.310 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 09:16:13.501 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$1ef66da1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 09:16:13.867 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 09:16:13.880 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:16:13.882 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 09:16:13.882 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 09:16:13.993 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 09:16:13.993 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1433 ms
+2020-06-05 09:16:16.177 [main] WARN  org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@40d52be7
+2020-06-05 09:16:16.186 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-06-05 09:16:16.199 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 09:16:16.235 [main] ERROR org.springframework.boot.SpringApplication.reportFailure(SpringApplication.java:826) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@40d52be7
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.juxue.Application.main(Application.java:24) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@40d52be7
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@40d52be7
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@40d52be7
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:842) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: java.io.IOException: 47.92.1.148:9300:9200: invalid IPv6 address
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:964) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:233) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1764) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1734) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1109) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:840) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: java.net.UnknownHostException: 47.92.1.148:9300:9200: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1170) ~[?:1.8.0_191]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_191]
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:664) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$InternalAddressResolver.resolveRemoteAddress(PoolingNHttpClientConnectionManager.java:635) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.processPendingRequest(AbstractNIOConnPool.java:474) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.lease(AbstractNIOConnPool.java:280) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.requestConnection(PoolingNHttpClientConnectionManager.java:295) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.requestConnection(AbstractClientExchangeHandler.java:377) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.start(DefaultClientExchangeHandlerImpl.java:129) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.InternalHttpAsyncClient.execute(InternalHttpAsyncClient.java:141) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.elasticsearch.client.RestClient.performRequestAsync(RestClient.java:537) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestClient.performRequestAsyncNoCatch(RestClient.java:520) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:232) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1764) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1734) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1109) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:840) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+2020-06-05 09:16:44.507 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 8580 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 09:16:44.512 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 09:16:45.421 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:16:45.471 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 46ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 09:16:45.477 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:16:45.485 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 09:16:45.696 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$15bd0ccb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 09:16:46.026 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 09:16:46.036 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:16:46.036 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 09:16:46.037 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 09:16:46.133 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 09:16:46.133 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1528 ms
+2020-06-05 09:16:46.990 [main] WARN  org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.RuntimeException: error while performing request
+2020-06-05 09:16:47.001 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-06-05 09:16:47.015 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 09:16:47.028 [main] ERROR org.springframework.boot.SpringApplication.reportFailure(SpringApplication.java:826) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.RuntimeException: error while performing request
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.juxue.Application.main(Application.java:24) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.RuntimeException: error while performing request
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.RuntimeException: error while performing request
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: java.lang.RuntimeException: error while performing request
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:969) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:233) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1764) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1734) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1109) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:840) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.apache.http.ProtocolException: Not a valid protocol version: This is not an HTTP port
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.parse(AbstractMessageParser.java:209) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:245) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+Caused by: org.apache.http.ParseException: Not a valid protocol version: This is not an HTTP port
+	at org.apache.http.message.BasicLineParser.parseProtocolVersion(BasicLineParser.java:148) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.message.BasicLineParser.parseStatusLine(BasicLineParser.java:366) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.codecs.DefaultHttpResponseParser.createMessage(DefaultHttpResponseParser.java:112) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.codecs.DefaultHttpResponseParser.createMessage(DefaultHttpResponseParser.java:50) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.parseHeadLine(AbstractMessageParser.java:156) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.parse(AbstractMessageParser.java:207) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:245) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+2020-06-05 09:17:28.342 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 6724 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 09:17:28.346 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 09:17:29.296 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:17:29.349 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 48ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 09:17:29.354 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:17:29.361 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 09:17:29.606 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$3c6b18e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 09:17:29.942 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 09:17:29.951 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:17:29.951 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 09:17:29.952 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 09:17:30.055 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 09:17:30.055 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1567 ms
+2020-06-05 09:17:30.690 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 09:17:30.693 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 09:17:30.693 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 09:17:30.693 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 09:17:30.694 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 09:17:30.694 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 09:17:33.690 [main] INFO  org.springframework.data.elasticsearch.client.TransportClientFactoryBean.lambda$buildClient$0(TransportClientFactoryBean.java:88) - Adding transport node : 47.92.1.148:9300
+2020-06-05 09:17:34.825 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 09:17:35.433 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 09:17:35.434 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 09:17:35.435 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 09:17:35.774 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 09:17:36.317 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 09:17:36.359 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 09:17:36.397 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 09:17:36.658 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:17:36.699 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 09:17:36.701 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 9.068 seconds (JVM running for 10.96)
+2020-06-05 09:18:30.916 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 09:18:30.916 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 09:18:30.928 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 12 ms
+2020-06-05 09:58:25.488 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 900 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 09:58:25.494 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 09:58:26.504 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:58:26.559 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 52ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 09:58:26.565 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 09:58:26.571 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 09:58:26.838 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$e8c92a6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 09:58:27.227 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 09:58:27.242 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 09:58:27.243 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 09:58:27.244 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 09:58:27.550 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 09:58:27.552 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1937 ms
+2020-06-05 09:58:29.245 [main] WARN  org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@6f347d7
+2020-06-05 09:58:29.251 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-06-05 09:58:29.260 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 09:58:29.266 [main] ERROR org.springframework.boot.SpringApplication.reportFailure(SpringApplication.java:826) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'itemRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@6f347d7
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.juxue.Application.main(Application.java:24) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemRepository': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@6f347d7
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@6f347d7
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@6f347d7
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:842) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:959) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:233) ~[elasticsearch-rest-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1764) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1734) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1109) ~[elasticsearch-rest-high-level-client-6.8.7.jar:6.8.7]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:840) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1219) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:251) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_191]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_191]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_191]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_191]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67) ~[spring-data-elasticsearch-3.2.6.RELEASE.jar:3.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[?:1.8.0_191]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+2020-06-05 10:14:56.946 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 6200 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 10:14:56.950 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 10:14:57.808 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:14:57.861 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 50ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 10:14:57.867 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:14:57.873 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 10:14:58.137 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$5494e6e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 10:14:58.487 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 10:14:58.495 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:14:58.496 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 10:14:58.497 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 10:14:58.598 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 10:14:58.598 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1563 ms
+2020-06-05 10:14:58.903 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 10:14:58.904 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 10:14:58.904 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 10:14:58.904 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 10:14:58.904 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 10:14:58.904 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 10:15:00.672 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.673 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.674 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.674 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.686 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.687 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.687 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:00.687 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:15:01.087 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 10:15:01.087 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 10:15:01.088 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 10:15:01.199 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 10:15:01.872 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 10:15:01.992 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 10:15:02.009 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 10:15:02.041 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 10:15:02.208 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:15:02.243 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 10:15:02.245 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 6.368 seconds (JVM running for 8.853)
+2020-06-05 10:25:48.569 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 2680 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 10:25:48.572 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 10:25:49.381 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:25:49.445 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 59ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 10:25:49.452 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:25:49.461 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 10:25:49.704 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$82a23d3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 10:25:50.126 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 10:25:50.138 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:25:50.139 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 10:25:50.141 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 10:25:50.278 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 10:25:50.279 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1663 ms
+2020-06-05 10:25:50.644 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 10:25:50.645 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 10:25:50.645 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 10:25:50.645 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 10:25:50.646 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 10:25:50.646 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 10:25:52.132 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.133 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.133 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.134 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.144 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.144 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.144 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.145 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:25:52.333 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 10:25:53.059 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 10:25:53.059 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 10:25:53.060 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 10:25:53.169 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 10:25:53.290 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 10:25:53.310 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 10:25:53.390 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 10:25:53.533 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:25:53.572 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 10:25:53.574 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 5.696 seconds (JVM running for 8.49)
+2020-06-05 10:26:03.141 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 10:26:03.141 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 10:26:03.150 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
+2020-06-05 10:26:03.167 [http-nio-8088-exec-1] WARN  org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1251) - No mapping for GET /commonWeb/Demo1
+2020-06-05 10:26:55.737 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 200 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 10:26:55.770 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 10:26:56.726 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:26:56.785 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 56ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 10:26:56.791 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:26:56.799 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 7ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 10:26:57.022 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$91081022] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 10:26:57.341 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 10:26:57.349 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:26:57.350 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 10:26:57.350 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 10:26:57.442 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 10:26:57.443 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1550 ms
+2020-06-05 10:26:57.709 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 10:26:57.709 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 10:26:57.709 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 10:26:57.710 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 10:26:57.710 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 10:26:57.710 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 10:26:59.055 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.056 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.057 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.058 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.067 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.068 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.068 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.069 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:26:59.250 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 10:26:59.941 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 10:26:59.941 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 10:26:59.942 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 10:27:00.045 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 10:27:00.152 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 10:27:00.170 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 10:27:00.209 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 10:27:00.348 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:27:00.385 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 10:27:00.387 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 5.442 seconds (JVM running for 7.251)
+2020-06-05 10:27:07.203 [http-nio-8088-exec-2] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 10:27:07.203 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 10:27:07.210 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-06-05 10:28:21.809 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 4104 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 10:28:21.821 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 10:28:22.815 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:28:22.866 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 48ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 10:28:22.871 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 10:28:22.877 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 10:28:23.072 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$217115a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 10:28:23.376 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 10:28:23.384 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:28:23.385 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 10:28:23.386 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 10:28:23.487 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 10:28:23.488 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1571 ms
+2020-06-05 10:28:23.757 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 10:28:23.757 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 10:28:23.758 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 10:28:23.758 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 10:28:23.758 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 10:28:23.758 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 10:28:25.184 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.184 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.185 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.186 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.196 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.197 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.197 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.198 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 10:28:25.394 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 10:28:26.110 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 10:28:26.110 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 10:28:26.111 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 10:28:26.209 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 10:28:26.328 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 10:28:26.351 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 10:28:26.391 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 10:28:26.537 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 10:28:26.595 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 10:28:26.599 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 5.534 seconds (JVM running for 7.297)
+2020-06-05 10:28:30.974 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 10:28:30.975 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 10:28:30.982 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+2020-06-05 11:07:49.105 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 3652 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 11:07:49.112 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 11:07:49.912 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:07:49.978 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 62ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 11:07:49.983 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:07:49.990 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 11:07:50.193 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$81cd0061] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 11:07:50.489 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 11:07:50.497 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:07:50.497 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 11:07:50.499 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 11:07:50.603 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 11:07:50.604 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1393 ms
+2020-06-05 11:07:50.994 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 11:07:50.995 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 11:07:50.995 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 11:07:50.995 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 11:07:50.996 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 11:07:50.996 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 11:07:52.464 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.465 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.466 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.467 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.478 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.478 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.479 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.479 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:07:52.678 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 11:07:53.032 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 11:07:53.033 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 11:07:53.034 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 11:07:53.279 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 11:07:53.711 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 11:07:53.729 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 11:07:53.767 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 11:07:53.919 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:07:53.961 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 11:07:53.963 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 5.714 seconds (JVM running for 7.459)
+2020-06-05 11:08:02.294 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 11:08:02.295 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 11:08:02.302 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+2020-06-05 11:15:45.933 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 10028 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 11:15:45.938 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 11:15:46.853 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:15:46.902 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 45ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 11:15:46.909 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:15:46.915 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 11:15:47.121 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$188449a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 11:15:47.518 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 11:15:47.527 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:15:47.528 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 11:15:47.529 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 11:15:47.644 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 11:15:47.644 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1633 ms
+2020-06-05 11:15:47.926 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 11:15:47.926 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 11:15:47.927 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 11:15:47.927 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 11:15:47.927 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 11:15:47.927 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 11:15:49.359 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.360 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.361 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.361 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.371 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.372 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.373 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.373 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:15:49.581 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 11:15:50.106 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 11:15:50.107 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 11:15:50.108 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 11:15:50.444 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 11:15:50.882 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 11:15:50.896 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 11:15:50.927 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 11:15:51.066 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:15:51.102 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 11:15:51.106 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 5.724 seconds (JVM running for 7.458)
+2020-06-05 11:15:58.288 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 11:15:58.288 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 11:15:58.294 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-06-05 11:16:15.584 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting Application on DESKTOP-9B1Q9MI with PID 6140 (E:\common_web\target\classes started by wx18 in E:\common_web)
+2020-06-05 11:16:15.590 [main] INFO  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+2020-06-05 11:16:16.568 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:16:16.650 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 52ms. Found 1 Elasticsearch repository interfaces.
+2020-06-05 11:16:16.656 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-05 11:16:16.664 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-05 11:16:16.945 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'asynConfig' of type [com.juxue.config.servlet.AsynConfig$$EnhancerBySpringCGLIB$$f6cd83de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-05 11:16:17.351 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8088 (http)
+2020-06-05 11:16:17.361 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:16:17.363 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-06-05 11:16:17.363 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-05 11:16:17.501 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-06-05 11:16:17.502 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1813 ms
+2020-06-05 11:16:17.813 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2020-06-05 11:16:17.813 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-06-05 11:16:17.814 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-06-05 11:16:17.814 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-06-05 11:16:17.814 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-06-05 11:16:17.815 [main] INFO  org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-06-05 11:16:19.334 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.336 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.337 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.339 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.361 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.361 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.363 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.365 [main] WARN  org.springframework.data.convert.CustomConversions.warnIfNotTimeType(CustomConversions.java:235) - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-05 11:16:19.563 [main] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:93) - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [title]
+2020-06-05 11:16:19.892 [main] INFO  com.juxue.config.servlet.AsynConfig.getAsyncExecutor(AsynConfig.java:28) - ----多线程初始化
+2020-06-05 11:16:19.892 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService
+2020-06-05 11:16:19.893 [main] INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'getAsyncExecutor'
+2020-06-05 11:16:20.121 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-05 11:16:20.594 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2020-06-05 11:16:20.609 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2020-06-05 11:16:20.641 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2020-06-05 11:16:20.774 [main] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8088"]
+2020-06-05 11:16:20.812 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8088 (http) with context path '/commonWeb'
+2020-06-05 11:16:20.815 [main] INFO  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started Application in 6.172 seconds (JVM running for 7.85)
+2020-06-05 11:16:25.873 [http-nio-8088-exec-1] INFO  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 11:16:25.873 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-06-05 11:16:25.878 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms

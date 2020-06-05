@@ -1,0 +1,6 @@
+2019-10-28 12:55:59.295 [http-nio-8088-exec-2] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx
+2019-10-28 12:57:21.823 [http-nio-8088-exec-3] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx
+2019-10-28 12:59:36.613 [http-nio-8088-exec-4] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx
+2019-10-28 13:02:14.500 [http-nio-8088-exec-6] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx
+2019-10-28 13:04:59.451 [http-nio-8088-exec-8] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx
+2019-10-28 13:10:42.802 [http-nio-8088-exec-2] ERROR com.juxue.web.controller.CustomerContoller.getCusDeptToUserInfo(CustomerContoller.java:58) - 推送的易聊的创建人是:juxuelx

@@ -1,0 +1,15 @@
+#\u670D\u52A1\u5668\u914D\u7F6E
+server:
+  port: 8088
+  servlet:
+    context-path: /commonWeb
+#spring:
+#  data:
+#    elasticsearch:
+#      cluster-name: docker-cluster
+#      cluster-nodes: 47.92.1.148:9300
+fdfs:
+  resHost: http://47.92.1.148
+  storagePort: 80
+  trackerList: 47.92.1.148:22122
+

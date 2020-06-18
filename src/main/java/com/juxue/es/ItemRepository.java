@@ -1,4 +1,4 @@
-package com.juxue.demo;
+package com.juxue.es;
 
 import com.juxue.entity.Item;
 import org.springframework.data.domain.Pageable;

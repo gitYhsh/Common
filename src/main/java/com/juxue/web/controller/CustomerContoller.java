@@ -1,10 +1,16 @@
 package com.juxue.web.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.juxue.domain.APiResult;
 import com.juxue.services.CommonFileUtil;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessageProperties;
+import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +24,9 @@ public class CustomerContoller {
 
 	@Autowired
 	private CommonFileUtil fileUtil;
+
+	@Autowired
+	private RabbitTemplate rabbitTemplate;
 
 
 	@ApiOperation(value = "文件上传(可多选)" )
@@ -33,6 +42,26 @@ public class CustomerContoller {
 			logger.error("创建失败:"+e.getMessage());
 		}
 		return APiResult.error("上传失败");
+	}
+
+	@PostMapping(value="sned/demo")
+	public void sendMqMsgController(){
+		String nowDate = String.valueOf(System.currentTimeMillis());
+
+		JSONObject jsonObject = new JSONObject(true);
+
+		jsonObject.put("demo","demo");
+		jsonObject.put("data",nowDate);
+
+		Message message = MessageBuilder
+				.withBody(jsonObject.toJSONString().getBytes())
+				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
+				.build();
+		this.rabbitTemplate.convertAndSend("device.manage.exchange","device.manage.demo" , message);
+
+		this.rabbitTemplate.convertAndSend("device.manage.exchange","device.alame.demo" , message);
+
+
 	}
 
 

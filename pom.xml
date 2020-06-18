@@ -107,6 +107,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		</dependency>
 
 
+		<!--rabbitMq-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+			<version>2.2.4.RELEASE</version>
+		</dependency>
+
+
 
 		<!--接口文档-->
 		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
@@ -134,13 +143,14 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<dependencies>
-					<dependency>
-						<groupId>org.springframework</groupId>
-						<artifactId>springloaded</artifactId>
-						<version>1.2.7.RELEASE</version>
-					</dependency>
-				</dependencies>
+				<version>2.2.4.RELEASE</version>
+<!--				<dependencies>-->
+<!--					<dependency>-->
+<!--						<groupId>org.springframework</groupId>-->
+<!--						<artifactId>springloaded</artifactId>-->
+<!--						<version>1.2.7.RELEASE</version>-->
+<!--					</dependency>-->
+<!--				</dependencies>-->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

@@ -1,18 +1,12 @@
 package com.juxue.web.controller;
 
-import com.juxue.demo.ItemRepository;
+import com.juxue.es.ItemRepository;
 import com.juxue.entity.Item;
-import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 
-import org.springframework.data.elasticsearch.core.query.*;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

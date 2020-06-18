@@ -57,10 +57,25 @@ public class CustomerContoller {
 				.withBody(jsonObject.toJSONString().getBytes())
 				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
 				.build();
-		this.rabbitTemplate.convertAndSend("device.manage.exchange","device.manage.demo" , message);
+		rabbitTemplate.setExchange("device.manage.exchange");
+		Message message1 = rabbitTemplate.sendAndReceive("device.manage.demo" , message);
 
-		this.rabbitTemplate.convertAndSend("device.manage.exchange","device.alame.demo" , message);
+		logger.error(new String(message1.getBody()));
 
+
+
+		JSONObject jsonObject222 = new JSONObject(true);
+
+		jsonObject222.put("demo","张三");
+		jsonObject222.put("data",nowDate);
+
+		Message message2 = MessageBuilder
+				.withBody(jsonObject222.toJSONString().getBytes())
+				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
+				.build();
+
+		Message message12 = this.rabbitTemplate.sendAndReceive("device.manage.exchange","device.excpet.demo" , message2);
+		logger.error(new String(message12.getBody()));
 
 	}
 

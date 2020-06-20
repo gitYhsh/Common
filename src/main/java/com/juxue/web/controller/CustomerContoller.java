@@ -6,8 +6,10 @@ import com.juxue.services.CommonFileUtil;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -55,27 +57,22 @@ public class CustomerContoller {
 
 		Message message = MessageBuilder
 				.withBody(jsonObject.toJSONString().getBytes())
-				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
+				.setContentType(MessageProperties.CONTENT_TYPE_JSON).setExpiration(5000+"").setHeader("x-delay", 10000)
 				.build();
-		rabbitTemplate.setExchange("device.manage.exchange");
-		Message message1 = rabbitTemplate.sendAndReceive("device.manage.demo" , message);
+		rabbitTemplate.convertAndSend("device.manage.exchange","device.manage.demo",message);//sendAndReceive("device.manage.demo" , message);
 
-		logger.error(new String(message1.getBody()));
-
-
-
-		JSONObject jsonObject222 = new JSONObject(true);
-
-		jsonObject222.put("demo","张三");
-		jsonObject222.put("data",nowDate);
-
-		Message message2 = MessageBuilder
-				.withBody(jsonObject222.toJSONString().getBytes())
-				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
-				.build();
-
-		Message message12 = this.rabbitTemplate.sendAndReceive("device.manage.exchange","device.excpet.demo" , message2);
-		logger.error(new String(message12.getBody()));
+//		JSONObject jsonObject222 = new JSONObject(true);
+//
+//		jsonObject222.put("demo","张三");
+//		jsonObject222.put("data",nowDate);
+//
+//		Message message2 = MessageBuilder
+//				.withBody(jsonObject222.toJSONString().getBytes())
+//				.setContentType(MessageProperties.CONTENT_TYPE_JSON)
+//				.build();
+//
+//		Message message12 = this.rabbitTemplate.sendAndReceive("device.manage.exchange","device.excpet.demo" , message2);
+//		logger.error(new String(message12.getBody()));
 
 	}
 
